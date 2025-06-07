@@ -12,7 +12,7 @@ class ChatServiceImpl final : public ChatService::Service {
               ServerReaderWriter<ChatResponse, ChatRequest>* stream) override {
     ChatRequest request;
     while (stream->Read(&request)) {  // 持续读取客户端流
-      std::string response_text = "Echo: " + request.text();
+      std::string response_text = "cppServer Echo: " + request.text();
       ChatResponse response;
       response.set_user_id("server");
       response.set_text(response_text);

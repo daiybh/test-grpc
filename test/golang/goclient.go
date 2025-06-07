@@ -2,10 +2,11 @@ package main
 
 import (
 	"bufio"
+	pb "testGRPC/chat"
+
 	"context"
 	"log"
 	"os"
-	pb "path/to/chat_pb"
 
 	"google.golang.org/grpc"
 )

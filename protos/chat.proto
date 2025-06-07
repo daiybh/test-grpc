@@ -14,6 +14,7 @@
 
 syntax = "proto3";
 
+option go_package = "example.com/project/protos/chat";
 
 package chat;
 
